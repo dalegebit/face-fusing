@@ -1,5 +1,10 @@
-# FaceFusing
+# face-fusing
+Image morphing that fuses two face images. Impletemented in C++ with CImg.
 
+## Example
+![](https://github.com/dalegebit/face-fusing/blob/master/example/1to2.gif)
+
+---
 All source codes are included in `src`.
 Two test images are included in `res/pics`  
 The control points are included in `res/control_pts`.
@@ -37,3 +42,4 @@ For each fusing procedure, the algorithm needs to know the correspongding positi
 `(T(n) : time complexity, N : number of pixels, M : number of control points)`
 
 The time complexity of the whole algorithm for generating a single funsing image is `O(N + M^2)`. If `M <= sqrt(N)`, which usually is the reality, the complexity becomes `O(N)`, which is very promising.
+
