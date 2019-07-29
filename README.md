@@ -26,7 +26,7 @@ The format is like:
 
 ...
 ```
-Dulaunay Triangulation is implemented with Bowyer-Watson algorithm, which is an incremented algorithm.
+Delaunay Triangulation is implemented with Bowyer-Watson algorithm, which is an incremented algorithm.
 Refs: https://en.wikipedia.org/wiki/Bowyer%E2%80%93Watson_algorithm
 
 For each fusing procedure, the algorithm needs to know the correspongding positions in source image and in targe image of a pixel in the fusing image, which means the two translation functions should be determined, so that its rgb value can be an interpolation of the rgb value of its corresponding positions in the two images. In this algorithm, we do this:
